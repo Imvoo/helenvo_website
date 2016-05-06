@@ -1,0 +1,402 @@
+/* iPhone4-ish */
+@media (min-width: 300px) {
+
+}
+
+/* iPhone6s-ish */
+@media (min-width: 400px) {
+
+}
+
+/* Tablets */
+@media (min-width: 750px) {
+
+}
+
+/* 720p devices */
+@media (min-width: 1000px) {
+
+}
+
+/* 1080p devices */
+@media (min-width: 1600px) {
+
+}
+
+
+html, body {
+	margin: 0;
+	position: relative;
+	font-family: "Montserrat";
+	padding: 0;
+	/*margin-top: -10px;*/
+}
+
+section {
+	height: 100vh;
+	width: 100%;
+}
+
+.hero {
+	font-weight: 600;
+	letter-spacing: 10px;
+	opacity: 1;
+}
+
+/* iPhone4-ish */
+@media (min-width: 300px) {
+	.hero {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		letter-spacing: 8px;
+	}
+}
+
+/* iPhone6s-ish */
+@media (min-width: 400px) {
+	.hero {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+}
+
+/* Tablets */
+@media (min-width: 720px) {
+	.hero {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+}
+
+/* 720p devices */
+@media (min-width: 1000px) {
+	.hero {
+		font-size: 4.5rem;
+		line-height: 5.5rem;
+	}
+}
+
+/* 1080p devices */
+@media (min-width: 1600px) {
+	.hero {
+		font-size: 7rem;
+		line-height: 8rem;
+	}
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.heroText {
+	font-weight: 600;
+	letter-spacing: 3px;
+	text-align: left;
+}
+
+@media (min-width: 300px) {
+	.heroText {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		letter-spacing: 2px;
+	}
+}
+
+@media (min-width: 400px) {
+	.heroText {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+}
+
+/* Tablets */
+@media (min-width: 720px) {
+	.heroText {
+		font-size: 3.75rem;
+		line-height: 4.5rem;
+		letter-spacing: 3px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.heroText {
+		font-size: 4.5rem;
+		line-height: 5.5rem;
+	}
+}
+
+@media (min-width: 1600px) {
+	.heroText {
+		font-size: 7rem;
+		line-height: 8rem;
+	}
+}
+
+.subhero {
+	letter-spacing: 5px;
+	font-weight: 400;
+	font-size: 1.25vw;
+	margin-top: -10px;
+}
+
+@media (min-width: 300px) {
+	.subhero {
+		font-size: 0.75rem;
+		line-height: 0.5rem;
+	}
+}
+
+@media (min-width: 400px) {
+	.subhero {
+		font-size: 1.25rem;
+		line-height: 1rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	.subhero {
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}
+}
+
+@media (min-width: 1600px) {
+	.subhero {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+}
+
+.heroContainer {
+	position: relative;
+	padding-left: 10vw;
+	top: 50%;
+	transform: translateY(-60%);
+
+	/*top: 20%;
+	position: relative;
+	padding-left: 10%;;*/
+}
+
+.center {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	transform: translateY(-50%);
+	top: 50%;
+}
+
+.container {
+	max-width: 1920px;
+}
+
+nav {
+	position: fixed;
+	right: 0;
+	width: 100%;
+	text-align: right;
+	top: 0;;
+}
+
+nav ul {
+	padding: 0 30px;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px;
+}
+
+li a {
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-shadow: none;
+	color: inherit;
+}
+
+.white {
+	color: white;
+}
+
+.black {
+	color: black;
+}
+
+img.logo {
+	width: 30px;
+	height: 30px;
+}
+
+li.logo {
+	float: left;
+}
+
+.jellyfrisk {
+	color: white;
+	background: url("../images/jellyfrisk_c.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.grandhyatt {
+	color: white;
+	background: url("../images/grandhyatt_c.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.directmail {
+	color: white;
+	background: url("../images/directmail_c.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.cupcake {
+	color: white;
+	background: url("../images/cupcake_c.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.motionportraits {
+	color: white;
+	background: url("../images/motionportraits_c.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+@keyframes blink {
+	0% { opacity: 0; }
+	50% { opacity: 1; }
+	75% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+.blinker {
+	display: inline-block;
+	background-color: #e74c3c;
+
+	animation: blink 1.2s linear infinite;
+	vertical-align: text-bottom;
+	width: 1.5px;
+}
+
+/* iPhone4-ish */
+@media (min-width: 300px) {
+	.blinker {
+		height: 2.5rem;
+	}
+}
+
+/* iPhone6s-ish */
+@media (min-width: 400px) {
+	.blinker {
+		height: 2.5rem;
+	}
+}
+
+/* Tablets */
+@media (min-width: 750px) {
+	.blinker {
+		height: 4.5rem;
+		width: 3px;
+	}
+}
+
+/* 720p devices */
+@media (min-width: 1000px) {
+	.blinker {
+		height: 5rem;
+	}
+}
+
+/* 1080p devices */
+@media (min-width: 1600px) {
+	.blinker {
+		height: 7rem;
+		width: 5px;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	animation: fadeIn 0.5s;
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0,-100%,0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeInDown {
+	animation: fadeInDown 1s;
+}
+
+@keyframes fadeInDownNav {
+	from {
+		opacity: 0;
+		transform: translate3d(0,-30%,0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+nav.fadeInDown {
+	animation: fadeInDownNav 1.5s;
+}
+
+aside {
+	z-index: 50;
+	position: fixed;
+	right: 1.5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+aside ul {
+	list-style-type: none;
+	font-size: 2vw;
+}
+
+aside ul li {
+	padding: 0;
+	height: 1vw;
+	width: 1vw;
+	line-height: 1vw;
+}
+
+/*	Larger than mobile
+	For hero readjustment.
+ */
+@media (max-width: 500px) {
+	nav ul {
+		padding: 0 10px;
+	}
+
+	nav li {
+		padding: 5px;
+		padding-top: 15px;
+	}
+
+	li a {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 650px) {
+
+}
