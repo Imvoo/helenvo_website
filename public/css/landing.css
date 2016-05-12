@@ -48,7 +48,7 @@ section {
 	.hero {
 		font-size: 1.5rem;
 		line-height: 2rem;
-		letter-spacing: 8px;
+		letter-spacing: 2px;
 	}
 }
 
@@ -65,6 +65,7 @@ section {
 	.hero {
 		font-size: 4rem;
 		line-height: 5rem;
+		letter-spacing: 8px;
 	}
 }
 
@@ -98,7 +99,7 @@ section {
 	.heroText {
 		font-size: 1.5rem;
 		line-height: 2rem;
-		letter-spacing: 1px;
+		letter-spacing: -0.25px;
 	}
 }
 
@@ -106,6 +107,7 @@ section {
 	.heroText {
 		font-size: 2rem;
 		line-height: 2.5rem;
+		letter-spacing: 1p	x;
 	}
 }
 
