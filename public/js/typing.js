@@ -49,29 +49,54 @@ function AddLetter(letter, id) {
 }
 
 window.onload = function() {
-	var words = [
-		"my name is helen.",
-		"\ni am a left-handed, glass",
-		"\nhalf full, melbourne based",
-		"\ndesigner & photographer.",
-		"\n\nnice to meet you"
-	]
+	if (document.title == "Helen Vo - Contact") {
+		var words = [
+			"send me stuff",
+		]
 
-	word = "hello";
+		word = "";
 
-	totalDelay += 3000;
-	for (var i = 0; i < word.length; i++) {
-		totalDelay += LETTER_DELETE_DELAY;
-		window.setTimeout(function() { DeleteLetter("heroHeader"); }, totalDelay);
-	};
+		totalDelay += 1500;
+		for (var i = 0; i < word.length; i++) {
+			totalDelay += LETTER_DELETE_DELAY;
+			window.setTimeout(function() { DeleteLetter("heroHeader"); }, totalDelay);
+		};
 
-	// window.setTimeout(function() {AddLetter("", "blinker")}, totalDelay);
-	window.setTimeout(function() {
-		var element = document.getElementById("blinker");
-		element.className = "blinker";
-	}, totalDelay)
+		// window.setTimeout(function() {AddLetter("", "blinker")}, totalDelay);
+		window.setTimeout(function() {
+			var element = document.getElementById("blinker");
+			element.className = "blinker";
+		}, totalDelay)
 
-	words.forEach(function(element, index){
-		Typewriter(element, true);
-	});
+		words.forEach(function(element, index){
+			Typewriter(element, true);
+		});
+	}
+	else {
+		var words = [
+			"my name is helen.",
+			"\ni am a left-handed, glass",
+			"\nhalf full, melbourne based",
+			"\ndesigner & photographer.",
+			"\n\nnice to meet you"
+		]
+
+		word = "hello";
+
+		totalDelay += 3000;
+		for (var i = 0; i < word.length; i++) {
+			totalDelay += LETTER_DELETE_DELAY;
+			window.setTimeout(function() { DeleteLetter("heroHeader"); }, totalDelay);
+		};
+
+		// window.setTimeout(function() {AddLetter("", "blinker")}, totalDelay);
+		window.setTimeout(function() {
+			var element = document.getElementById("blinker");
+			element.className = "blinker";
+		}, totalDelay)
+
+		words.forEach(function(element, index){
+			Typewriter(element, true);
+		});
+	}
 };
