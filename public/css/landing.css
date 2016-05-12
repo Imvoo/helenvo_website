@@ -439,6 +439,59 @@ aside ul li {
 	vertical-align: text-top;
 }
 
+/* iPhone4-ish */
+@media (min-width: 300px) {
+	.middleText, .middleText ~ .middleText {
+		font-size: 2rem;
+		letter-spacing: 1px;
+	}
+
+	.middleText > span.blinker {
+		height: 2rem;
+	}
+}
+
+/* iPhone6s-ish */
+@media (min-width: 400px) {
+
+}
+
+/* Tablets */
+@media (min-width: 750px) {
+	.middleText, .middleText ~ .middleText {
+		font-size: 5.5rem;
+		letter-spacing: 3px;
+	}
+
+	.middleText > span.blinker {
+		height: 7rem;
+	}
+}
+
+/* 720p devices */
+@media (min-width: 1000px) {
+	.middleText, .middleText ~ .middleText {
+		font-size: 6rem;
+		letter-spacing: 3px;
+	}
+
+	.middleText > span.blinker {
+		height: 6rem;
+	}
+}
+
+/* 1080p devices */
+@media (min-width: 1600px) {
+	.middleText, .middleText ~ .middleText {
+		font-size: 7rem;
+		letter-spacing: 3px;
+	}
+
+	.middleText > span.blinker {
+		height: 7rem;
+	}
+}
+
 .heroText > a {
 	color: inherit;
 	text-decoration: none;
@@ -447,3 +500,4 @@ aside ul li {
 .heroText > a:hover {
 	color: gray;
 }
+
