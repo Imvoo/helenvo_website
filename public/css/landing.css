@@ -443,7 +443,7 @@ aside ul li {
 @media (min-width: 300px) {
 	.middleText, .middleText ~ .middleText {
 		font-size: 2rem;
-		letter-spacing: 1px;
+		letter-spacing: -0.25px;
 	}
 
 	.middleText > span.blinker {
