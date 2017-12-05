@@ -1,5 +1,4 @@
 var allHeros = document.getElementsByTagName("section");
-console.log(allHeros);
 
 window.onscroll = function () {
 	var currentPos = document.getElementsByTagName("body")[0].scrollTop;
@@ -26,7 +25,6 @@ window.onscroll = function () {
 			var tmpItem2 = item.children[0].children[1];
 
 			if (currentPos > item.offsetTop - (item.offsetHeight / 2)) {
-				console.log("offset!")
 				tmpItem.className = "hero fadeInDown";
 				item.done = true;
 			}
