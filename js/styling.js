@@ -1,7 +1,7 @@
 var allHeros = document.getElementsByTagName("section");
 
 window.onscroll = function () {
-	var currentPos = document.getElementsByTagName("body")[0].scrollTop;
+	var currentPos = document.getElementsByTagName("html")[0].scrollTop;
 	var secondSection = document.getElementsByTagName("section")[1].offsetTop;
 
 	if (currentPos > (secondSection - 50)) {
